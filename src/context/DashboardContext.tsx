@@ -1,5 +1,5 @@
-import { createContext, useReducer, ReactNode } from 'react';
-import { dashboardReducer, DashboardState } from './dashboardReducer';
+import { createContext, useReducer, type ReactNode } from 'react';
+import { dashboardReducer, type DashboardState } from './dashboardReducer';
 import { clients, projects, payments } from '../data/sampleData';
 
 const initialState: DashboardState = { clients, projects, payments };

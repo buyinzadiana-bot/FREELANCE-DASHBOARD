@@ -1,4 +1,4 @@
-import { Payment } from '../models';
+import type { Payment } from '../models';
 
 interface Props {
   payments: Payment[];

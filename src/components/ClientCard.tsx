@@ -1,4 +1,4 @@
-import { Client } from '../models';
+import type { Client } from '../models';
 
 interface Props {
   client: Client;

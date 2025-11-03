@@ -1,4 +1,4 @@
-import { Client, Project, Payment } from '../models';
+import type { Client, Project, Payment } from '../models';
 
 export const clients: Client[] = [
   { id: 'c1', name: 'Acme Corp', email: 'acme@example.com' },

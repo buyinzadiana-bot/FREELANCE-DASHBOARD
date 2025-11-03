@@ -1,4 +1,4 @@
-import { Client, Project, Payment } from '../models';
+import type { Client, Project, Payment } from '../models';
 
 export interface DashboardState {
   clients: Client[];

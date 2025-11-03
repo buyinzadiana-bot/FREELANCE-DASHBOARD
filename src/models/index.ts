@@ -1,3 +1,3 @@
-export * from './Client';
-export * from './Project';
-export * from './Payment';
+export type { Client } from './Client';
+export type { Project } from './Project';
+export type { Payment } from './Payment';

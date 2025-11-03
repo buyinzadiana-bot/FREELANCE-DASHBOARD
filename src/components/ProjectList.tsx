@@ -1,4 +1,4 @@
-import { Project } from '../models';
+import type { Project } from '../models';
 
 interface Props {
   projects: Project[];
