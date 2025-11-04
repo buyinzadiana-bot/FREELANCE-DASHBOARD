@@ -1,5 +1,6 @@
 import { DashboardProvider } from './context/DashboardContext';
 import { Dashboard } from './pages/Dashboard';
+import './index.css'
 
 export const App = () => (
   <DashboardProvider>
