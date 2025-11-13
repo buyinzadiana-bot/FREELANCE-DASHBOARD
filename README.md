@@ -1,75 +1,69 @@
-# React + TypeScript + Vite
+PROJECT OVERVIEW
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FreelanceHub Dashboard is a simple yet elegant dashboard designed for freelancers or small businesses to track clients, projects, and payments. It provides a modern UI with interactive cards and sections to quickly access important metrics.
 
-Currently, two official plugins are available:
+The dashboard includes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fixed header and footer for consistent navigation.
 
-## React Compiler
+Dynamic statistics displaying total clients, projects, and payments.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Interactive Client, Project, and Payment cards.
 
-Note: This will impact Vite dev & build performances.
+Clean, responsive design using Tailwind CSS.
 
-## Expanding the ESLint configuration
+Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Dashboard Stats: Quick overview of total clients, projects, and payments.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Client Management: Display a list of clients with basic information.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Project Management: List projects with status indicators (active, pending, completed).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Payments Overview: Track payments by project with status (paid or pending).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Responsive Layout: Works on desktop and mobile devices.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Dynamic Data: Powered by React Context and Reducer for state management.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Tech Stack
+
+React – Component-based frontend framework
+
+TypeScript – Strong typing for better code safety
+
+Tailwind CSS – Utility-first CSS framework for styling
+
+React Context + Reducer – State management
+
+Vite – Fast development build tool (optional)
+
+Project Structure
+freelance-dashboard/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── ClientCard.tsx
+│   │   ├── DashboardStats.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── PaymentsView.tsx
+│   │   └── ProjectList.tsx
+│   ├── context/
+│   │   └── DashboardContext.tsx
+│   ├── data/
+│   │   └── sampleData.ts
+│   ├── models/
+│   │   ├── Client.ts
+│   │   ├── Project.ts
+│   │   └── Payment.ts
+│   ├── pages/
+│   │   └── Dashboard.tsx
+│   ├── App.tsx
+│   └── index.tsx
+├── tailwind.config.js
+├── tsconfig.json
+├── package.json
+└── README.md
+![freelance screenshoot](gjhhnujhnjh)
