@@ -5,18 +5,18 @@ interface Props {
 }
 
 export const DashboardStats = ({ totalClients, totalProjects, totalPayments }: Props) => (
-  <div className="grid grid-cols-3 gap-4 mb-4">
-    <div className="bg-blue-100 p-4 rounded text-center">
-      <h2 className="text-xl font-bold">{totalClients}</h2>
-      <p>Clients</p>
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div className="bg-gradient-to-br from-blue-100 to-blue-200 p-5 rounded-xl shadow-sm text-center">
+      <h2 className="text-2xl font-bold text-blue-700">{totalClients}</h2>
+      <p className="text-gray-700">Clients</p>
     </div>
-    <div className="bg-green-100 p-4 rounded text-center">
-      <h2 className="text-xl font-bold">{totalProjects}</h2>
-      <p>Projects</p>
+    <div className="bg-gradient-to-br from-green-100 to-green-200 p-5 rounded-xl shadow-sm text-center">
+      <h2 className="text-2xl font-bold text-green-700">{totalProjects}</h2>
+      <p className="text-gray-700">Projects</p>
     </div>
-    <div className="bg-yellow-100 p-4 rounded text-center">
-      <h2 className="text-xl font-bold">${totalPayments}</h2>
-      <p>Total Payments</p>
+    <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 p-5 rounded-xl shadow-sm text-center">
+      <h2 className="text-2xl font-bold text-yellow-700">${totalPayments}</h2>
+      <p className="text-gray-700">Total Payments</p>
     </div>
   </div>
 );
