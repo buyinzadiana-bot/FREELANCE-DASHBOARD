@@ -66,4 +66,4 @@ freelance-dashboard/
 ├── tsconfig.json
 ├── package.json
 └── README.md
-![freelance screenshoot](gjhhnujhnjh)
+![freelance screenshoot](https://github.com/buyinzadiana-bot/FREELANCE-DASHBOARD/blob/74e30265b3ce09f94b5f6b74d3840bceecc77b4e/Screenshot%202025-11-13%20at%2016.52.17.png)
