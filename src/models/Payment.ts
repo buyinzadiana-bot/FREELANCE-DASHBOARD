@@ -4,4 +4,5 @@ export interface Payment {
   amount: number;
   date: string;
   status: 'paid' | 'pending';
+  
 }

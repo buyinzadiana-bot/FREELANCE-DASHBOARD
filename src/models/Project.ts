@@ -4,4 +4,5 @@ export interface Project {
   name: string;
   status: 'active' | 'completed' | 'pending';
   dueDate: string;
+
 }
